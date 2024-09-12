@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canto do Chef</title>
+    <link rel="shortcut icon" href="logo33.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Canto do Chef</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Avaliações</a></li>
+                <li><a href="#">Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu">
+        <h2>Nosso <span>Menu</span></h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/c3c202c5-ca2c-46d2-a1ce-2f7a202596cc/202001140841_foPS_t.jpg" alt="lasanha clássica, crocante frango à parmegiana e fettuccine alfredo.">
+                <h3>Tour of Italy</h3>
+                <p>Lasanha clássica, crocante frango à parmegiana e fettuccine alfredo.</p>
+                <a href="https://static.ifood-static.com.br/image/upload/t_medium/pratos/c3c202c5-ca2c-46d2-a1ce-2f7a202596cc/202001140841_foPS_t.jpg" aria-label="Link para imagem maior">Ver imagem maior</a>
+                <p class="price">R$150.00</p>
+                <button>Compre Agora</button>
+                <button onclick="lerDescricao(this)">Ouvir Descrição</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/c3c202c5-ca2c-46d2-a1ce-2f7a202596cc/201910231147_Dl98_f.jpg" alt="Molho à base de queijo parmesão, servido sobre fettuccine.">
+                <h3>Fettuccine alfredo</h3>
+                <p>A receita mais famosa e icônica do Olive Garden.</p>
+                <a href="https://static.ifood-static.com.br/image/upload/t_medium/pratos/c3c202c5-ca2c-46d2-a1ce-2f7a202596cc/201910231147_Dl98_f.jpg" aria-label="Link para imagem maior">Ver imagem maior</a>
+                <p class="price">R$97.00</p>
+                <button>Compre agora</button>
+                <button onclick="lerDescricao(this)">Ouvir Descrição</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/9ad35e1c-71b2-4e97-b196-41b8f91b637f/202301090954_V56B_i.jpg" alt="Escalopes de filé mignon grelhado, regado com redução de aceto balsâmico, servido sobre fettuccine Alfredo.">
+                <h3>Steak Gorgonzola-Alfredo</h3>
+                <p>Escalopes de filé mignon grelhado, regado com redução de aceto balsâmico, servido sobre fettuccine Alfredo.</p>
+                <a href="https://static.ifood-static.com.br/image/upload/t_medium/pratos/9ad35e1c-71b2-4e97-b196-41b8f91b637f/202301090954_V56B_i.jpg" aria-label="Link para imagem maior">Ver imagem maior</a>
+                <p class="price">R$135.00</p>
+                <button>Compre agora</button>
+                <button onclick="lerDescricao(this)">Ouvir Descrição</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/e5ee612d-82c4-451b-bca1-d6959e4a6705/202407030714_vxjmxbop4t.png" alt="Dois hambúrgueres, alface americana, queijo cheddar, maionese Big Mac, cebola, picles e pão com gergelim.">
+                <h3>Big Mac</h3>
+                <p>Dois hambúrgueres, alface americana, queijo cheddar, maionese Big Mac, cebola, picles e pão com gergelim.</p>
+                <a href="https://static.ifood-static.com.br/image/upload/t_medium/pratos/e5ee612d-82c4-451b-bca1-d6959e4a6705/202407030714_vxjmxbop4t.png" aria-label="Link para imagem maior">Ver imagem maior</a>
+                <p class="price">R$26.90</p>
+                <button>Compre agora</button>
+                <button onclick="lerDescricao(this)">Ouvir Descrição</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/e5ee612d-82c4-451b-bca1-d6959e4a6705/202407030716_5o3izl9nnsn.png" alt="Batatas selecionadas, fritas, crocantes por fora, macias por dentro.">
+                <h3>McFritas Grande</h3>
+                <p>Batatas selecionadas, fritas, crocantes por fora, macias por dentro.</p>
+                <a href="https://static.ifood-static.com.br/image/upload/t_medium/pratos/e5ee612d-82c4-451b-bca1-d6959e4a6705/202407030716_5o3izl9nnsn.png" aria-label="Link para imagem maior">Ver imagem maior</a>
+                <p class="price">R$15.90</p>
+                <button>Compre agora</button>
+                <button onclick="lerDescricao(this)">Ouvir Descrição</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://cdn.awsli.com.br/600x700/1330/1330028/produto/98133241/83788642fb.jpg" alt="Bebida gelada na medida certa para matar sua sede.">
+                <h3>Coca-Cola 500ML</h3>
+                <p>Bebida gelada na medida certa para matar sua sede.</p>
+                <a href="https://cdn.awsli.com.br/600x700/1330/1330028/produto/98133241/83788642fb.jpg" aria-label="Link para imagem maior">Ver imagem maior</a>
+                <p class="price">R$12.90</p>
+                <button>Compre agora</button>
+                <button onclick="lerDescricao(this)">Ouvir Descrição</button>
+            </div>
+            <!-- Third Row -->
+            <div class="menu-item">
+                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/97307dfb-083f-406b-81d2-c46872226f26/202402072244_X1K5_i.jpg" alt="Maravilhosa porção de 20 mini pasteis.">
+                <h3>20 Mini Pasteis</h3>
+                <p>Maravilhosa porção de 20 mini pasteis.</p>
+                <a href="https://static.ifood-static.com.br/image/upload/t_medium/pratos/97307dfb-083f-406b-81d2-c46872226f26/202402072244_X1K5_i.jpg" aria-label="Link para imagem maior">Ver imagem maior</a>
+                <p class="price">R$32.90</p>
+                <button>Compre agora</button>
+                <button onclick="lerDescricao(this)">Ouvir Descrição</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/97307dfb-083f-406b-81d2-c46872226f26/202009300947_7EgB_r.jpg" alt="25 salgadinhos fritos pra você comer.">
+                <h3>25 Salgadinhos</h3>
+                <p>25 salgadinhos fritos pra você comer.</p>
+                <a href="https://static.ifood-static.com.br/image/upload/t_medium/pratos/97307dfb-083f-406b-81d2-c46872226f26/202009300947_7EgB_r.jpg" aria-label="Link para imagem maior">Ver imagem maior</a>
+                <p class="price">R$24.90</p>
+                <button>Compre agora</button>
+                <button onclick="lerDescricao(this)">Ouvir Descrição</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/97307dfb-083f-406b-81d2-c46872226f26/202308021417_3VTH_i.jpg" alt="Porção de 20 mini churros.">
+                <h3>20 Mini Churros</h3>
+                <p>Porção de 20 mini churros.</p>
+                <a href="https://static.ifood-static.com.br/image/upload/t_medium/pratos/97307dfb-083f-406b-81d2-c46872226f26/202308021417_3VTH_i.jpg" aria-label="Link para imagem maior">Ver imagem maior</a>
+                <p class="price">R$26.90</p>
+                <button>Compre agora</button>
+                <button onclick="lerDescricao(this)">Ouvir Descrição</button>
+            </div>
+            <!-- Fourth Row -->
+            <div class="menu-item">
+                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/965fdb11-52eb-426a-9235-be16d6d6af18/202404110155_hqys_.jpeg" alt="Bolo de chocolate com cobertura de chocolate e brigadeiros.">
+                <h3>Bolo de chocolate com cobertura de chocolate e brigadeiros</h3>
+                <p>Bolo Caseiro de Chocolate com Cobertura de Chocolate é uma verdadeira tentação. Essa delícia é feita com um toque especial.</p>
+                <a href="https://static.ifood-static.com.br/image/upload/t_medium/pratos/965fdb11-52eb-426a-9235-be16d6d6af18/202404110155_hqys_.jpeg" aria-label="Link para imagem maior">Ver imagem maior</a>
+                <p class="price">R$35.99</p>
+                <button>Compre agora</button>
+                <button onclick="lerDescricao(this)">Ouvir Descrição</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/965fdb11-52eb-426a-9235-be16d6d6af18/202405051424_hR2E_.jpeg" alt="Sorvete artesanal com Leite em pó e Creme de Avelã" height="289px" width="240px">
+                <h3>Sorvete artesanal com Leite em pó e Creme de Avelã</h3>
+                <p>Sorvete artesanal sabor Leite em Pó com Avelã. Uma combinação perfeita.</p>
+                <a href="https://static.ifood-static.com.br/image/upload/t_medium/pratos/965fdb11-52eb-426a-9235-be16d6d6af18/202405051424_hR2E_.jpeg" aria-label="Link para imagem maior">Ver imagem maior</a>
+                <p class="price">R$7.99</p>
+                <button>Compre agora</button>
+                <button onclick="lerDescricao(this)">Ouvir Descrição</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/965fdb11-52eb-426a-9235-be16d6d6af18/202404252331_U0T2_.jpeg" alt="Casadinho de brownie com doce de leite">
+                <h3>Casadinho de brownie com doce de leite</h3>
+                <p>Casadinho de brownie com doce de leite.Essa delícia é feita com um toque especial.</p>
+                <a href="https://static.ifood-static.com.br/image/upload/t_medium/pratos/965fdb11-52eb-426a-9235-be16d6d6af18/202404252331_U0T2_.jpeg" aria-label="Link para imagem maior">Ver imagem maior</a>
+                <p class="price">R$12.99</p>
+                <button>Compre agora</button>
+                <button onclick="lerDescricao(this)">Ouvir Descrição</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function lerDescricao(botao) {
+            // Interrompe qualquer fala em andamento antes de iniciar uma nova
+            window.speechSynthesis.cancel();
+            
+            // Captura o texto do atributo alt da imagem dentro do mesmo div do botão clicado
+            const descricaoImagem = botao.parentElement.querySelector('img').alt;
+            lerTexto(descricaoImagem);
+        }
+
+        function lerTexto(texto) {
+            const mensagem = new SpeechSynthesisUtterance(texto);
+            window.speechSynthesis.speak(mensagem);
+        }
+    </script>
+</body>
+</html>
